@@ -185,7 +185,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Msucevan\Swapi\SwapiServiceProvider::class,
         /*
          * Application Service Providers...
          */
