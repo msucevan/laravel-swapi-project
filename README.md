@@ -14,27 +14,40 @@ Laravel Swapi Project is an api build to show people and their related planets f
 
 Clone the repository in your local enviroment
 
-```https://github.com/msucevan/laravel-swapi-project.git ```
+```git clone https://github.com/msucevan/laravel-swapi-project.git ```
 
 Build the project image
 
 ```docker build -t laravel-swapi-project . ```
+OR
+```docker-compose build```
 
 And/or just run
 
 ```docker-compose up -d```
 
+Request the bash console to the application container with the alias name: php
+
+```docker exec -it php bash```
+
+```composer require msucevan\swapi```
+
+```composer install```
+
+Then, run laravel artisan migrations
+
+```php artisan migrate```
 
 
+Then, run laravel artisan command to create a new universe
 
-API endpoints
+```php artisan create-universe```
+
+
+Now this API endpoints are available
 
 ```
-http://localhost:8080/planet            // Get the list of all planets
 http://localhost:8080/people            // Get the list of all people
-http://localhost:8080/planet/{id}       // Get the details about the planet
-http://localhost:8080/people/{id}       // Get the details about the planet
+http://localhost:8080/people/{id}       // Get the details about the person and the details about the related planet
 ```
-
-## Laravel Sponsors
 
