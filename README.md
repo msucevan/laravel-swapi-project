@@ -51,3 +51,19 @@ http://localhost:8080/people            // Get the list of all people
 http://localhost:8080/people/{id}       // Get the details about the person and the details about the related planet
 ```
 
+The list is sortable with the parameter ?sort='column'
+
+```
+http://localhost:8080/people?sort=skin_color
+```
+
+The list is filterable by name, gender, eye color and skincolor
+
+```
+http://localhost:8080/people?name=luke
+http://localhost:8080/people?gender=male
+http://localhost:8080/people?eyecolor=blue
+http://localhost:8080/people?skincolor=gold
+```
+
+
